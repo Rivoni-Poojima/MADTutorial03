@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
@@ -15,11 +16,7 @@
         android:elegantTextHeight="true"
         android:onClick="buttonClick"
         android:text="@string/btn_Divide"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnMultiply"
-        app:layout_constraintTop_toTopOf="@+id/btnMultiply" />
+        android:textSize="34sp" />
 
     <Button
         android:id="@+id/btnMultiply"
@@ -31,12 +28,7 @@
         android:elegantTextHeight="true"
         android:onClick="buttonClick"
         android:text="@string/btn_Multiply"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnDivide"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textSize="34sp" />
 
     <Button
         android:id="@+id/btnMinus"
@@ -47,11 +39,7 @@
         android:elegantTextHeight="true"
         android:onClick="buttonClick"
         android:text="@string/btn_Minus"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnPlus"
-        app:layout_constraintTop_toTopOf="@+id/btnPlus" />
+        android:textSize="34sp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -59,12 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="@string/label_Number2"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/edtNumber2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtNumber1" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView"
@@ -72,13 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/label_Number1"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/edtNumber1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/btnPlus"
@@ -90,10 +67,7 @@
         android:elegantTextHeight="true"
         android:onClick="buttonClick"
         android:text="@string/btn_Plus"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnMultiply"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtNumber2" />
+        android:textSize="34sp" />
 
     <EditText
         android:id="@+id/edtNumber1"
@@ -102,11 +76,7 @@
         android:layout_marginTop="76dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/edt_Number1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.415"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/edt_Number1" />
 
     <EditText
         android:id="@+id/edtNumber2"
@@ -115,9 +85,5 @@
         android:layout_marginTop="240dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/edt_Number2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="@string/edt_Number2" />
+</LinearLayout>
